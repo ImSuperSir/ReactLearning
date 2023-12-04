@@ -1,17 +1,50 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+// const saludar = function (pNombre)
+// {
+//   return `Hola ${pNombre}`
+// };
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// const saludar2 = (pNombre) =>
+// {
+//   return `Hola ${pNombre}`
+// };
+
+
+const saludar3 = (pNombre) => `Hola ${pNombre}`;
+const saludar4 = () => `Hola Mundo`;
+
+console.log(saludar3('Lauro Ramirez Hernandez'));
+console.log(saludar4());  //Checar el detalle de los parentesis, si no los pongo devuelve la funcion, no la ejeucion de esta
+
+
+const getUser = (pNombre) => ({
+  uid :'asdf',
+  nombre : pNombre
+});
+
+const user = getUser('Guito');
+console.log(user);
+
+
+// function getUsuarioActivo(nombre) {
+//   return {
+//     uid : 'QWERQWER',
+//     userName : nombre
+//   }
+// };
+
+// const usuarioActivo = getUsuarioActivo('LauritoDos');
+// console.log(usuarioActivo);
+
+
+
+
+const usuarioActivo = (nombre) => ({
+  
+    uid : 'QWERQWER',
+    userName : nombre
+  
+});
+
+
+console.log(usuarioActivo('Laurito 3'));
