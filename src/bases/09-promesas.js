@@ -1,6 +1,7 @@
 import { getHeroeById, getHeroesByOwner } from "./bases/08-imp-exp";
 
 
+//las promesas son asincronas
 
 // const promesa = new Promise((resolve, reject) =>
 // {

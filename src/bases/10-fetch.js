@@ -2,6 +2,8 @@ const apiKey = 'tEvmShhCKx3ldivNkeJVpr75ZyPjpOO6';
 
 const peticion = fetch(`https://api.giphy.com/v1/gifs/random?api_key=${apiKey}`);
 
+
+//las promesas pueden encadenarse
 peticion
     .then(resp => resp.json())  //esto es una respuesta implicita de la promesa, que es una promesa, y se puede encadenar
     .then( ({data}) => {
